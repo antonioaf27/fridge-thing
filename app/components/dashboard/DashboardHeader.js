@@ -14,7 +14,7 @@ export default function DashboardHeader({ username }) {
 
       <div style={styles.heroActions}>
         <button style={styles.primaryButton}>Add Ingredient</button>
-        <button style={styles.secondaryButton}>View Inventory</button>
+        <button style={styles.secondaryButton}>View Pantry</button>
       </div>
     </section>
   );
