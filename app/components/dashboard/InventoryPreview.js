@@ -6,7 +6,7 @@ export default function InventoryPreview({ items }) {
   return (
     <section style={styles.sectionCard}>
       <div style={styles.sectionHeaderRow}>
-        <h2 style={styles.sectionTitle}>Current Inventory</h2>
+        <h2 style={styles.sectionTitle}>Your Pantry</h2>
         <span style={styles.linkText}>See all</span>
       </div>
 
