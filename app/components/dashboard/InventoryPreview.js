@@ -16,9 +16,10 @@ export default function InventoryPreview({ items }) {
         ))}
       </div>
 
-      <button className={`${styles.buttonPrimary} ${styles.buttonFullWidth}`}>
-        Update Inventory
-      </button>
+      <div className={styles.inventoryActions}>
+        <button className={styles.buttonPrimary}>Add Ingredient</button>
+        <button className={styles.buttonSecondary}>View Pantry</button>
+      </div>
     </DashboardSection>
   );
 }

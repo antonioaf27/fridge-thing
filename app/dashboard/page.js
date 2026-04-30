@@ -4,13 +4,11 @@ import React from "react";
 import DashboardHeader from "../components/dashboard/DashboardHeader";
 import MacroSummary from "../components/dashboard/MacroSummary";
 import InventoryPreview from "../components/dashboard/InventoryPreview";
-import QuickActions from "../components/dashboard/QuickActions";
 import RecipeSuggestions from "../components/dashboard/RecipeSuggestions";
 import styles from "./dashboard.module.css";
 import {
   dashboardInventoryItems,
   dashboardMacroData,
-  dashboardQuickActions,
   dashboardRecipes,
 } from "../components/dashboard/dashboardContent";
 
@@ -23,10 +21,8 @@ export default function DashboardPage() {
 
       <div className={styles.twoColumnLayout}>
         <InventoryPreview items={dashboardInventoryItems} />
-        <QuickActions actions={dashboardQuickActions} />
+        <RecipeSuggestions recipes={dashboardRecipes} />
       </div>
-
-      <RecipeSuggestions recipes={dashboardRecipes} />
     </div>
   );
 }
